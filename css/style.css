@@ -1,0 +1,571 @@
+/*font-family: 'Inconsolata', monospace;*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Inconsolata', monospace;
+}
+h1,h4{
+    color: #1d273b;
+    font-weight: 500;
+} 
+.contenedor{
+    width: 90%;
+    max-width: 1100px;/*que no rebaselos 1k px*/
+    margin: auto;
+    overflow: hidden;/*corta si sobre pasa*/
+    
+}
+.contenedor1{/*tiene padding*/
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+
+    background: #ffffff;
+}
+h1{
+    font-size: 50px
+}
+/***********HEADER***************************-----------------------------------------*/
+header::before{/*insertar antes del contenido, seudoelemento por por usar fixed*/
+    content: "";
+    display: block;
+    height: 80px;
+
+}
+nav{
+    width: 100%;
+    height: 100px;
+    background: rgb(255, 255, 255);
+    border-bottom: 1px solid transparent;
+    box-shadow: 1px 1px 10px 0 rgba(0,0,0, .2);
+    position: fixed;
+    transition: ease-in-out 0.5s;/* retroceso para el ocultamiento Y ANIMACION CON  de jv*/
+    top: 0;
+ z-index: 3;/*al aplicrle animat por eso uso fixed*/
+}
+.nav{
+    display: flex;/*directamente--alinearlos en fila*/
+    justify-content: space-between;/*distribuyendoles por espacio*/
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    padding: 0 40px;/*800 muy apretado-con esto se ve bien*/
+    /*0 ariba0 abjo, costados 40px*/
+}
+
+.nav .logo{
+    height: 100px;
+}
+.nav .logo img{
+    background: rgb(255, 255, 255);
+    height: 100%;
+    vertical-align: top;
+}
+.enlaces-header{
+    font-weight: 300;
+    transition: ease-in-out 0.5s;/*retroceso para el ocultamiento Y ANIMACION CON  de jv*/
+}
+.enlaces-header a{
+    color: rgb(45, 69, 143);
+    text-decoration: none;
+    margin-left: 20px;
+   
+}
+.hamburguer{
+    width: 80px;
+    height: 80px;
+  display: none;
+
+    text-align: center;
+    cursor: pointer;
+   /* z-index: 4;/*no es necesario ya que pertenece al img*/
+   /* transition:  color 0.5s ease-in;*/
+}
+.hamburguer i{
+    font-size: 25px;
+    line-height: 80px;
+}
+/*---------------------------------------------*/
+.contenido-header{
+   /* width: 100%;*/
+    height: 600px;
+    display: flex;
+    justify-content: space-between;/*espacio entre 2*/
+
+    align-items:center;
+}
+.contenido-header img{
+    width: 60%;
+    /*width: 550px;*/
+    animation: ease-in animat 1s;/*el tieempo u retraso*/
+}
+@keyframes animat{/*animacion zoom*/
+    0%{transform:scale(0);}
+    100%{transform: scale(1);}
+}
+.textos-header{
+    margin:0 0 0 30px;/*ajustando el espacio*/
+}
+.contenido-header p{
+    font-weight: 300;
+    margin-top: 14px;
+    color: #7b0505;
+}
+.contenido-header a{/*boton verde*/
+    margin: 28px 0;
+    width: 130px;
+    display: block;
+    background: #288457;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-weight: 400;
+    text-transform: uppercase;/*mayusculas*/
+    font-size: 14px;
+    border-radius: 5px;
+    box-shadow: 0 8px 32px rgba(31, 222,130, .46);
+
+}
+.titulo{
+    color: skyblue;
+    font-size: 50px;
+    
+}
+/*------sgtesection------about-us-----------------------------------*/
+.about-us{
+    background: #f2f2f2;
+}
+.contenedor-articulo{
+    padding: 60px;
+display: flex;
+flex-wrap: wrap;
+margin-top: 60px ;
+justify-content: space-around;/*lo mismo evenly solo que mas espacio*/
+}
+.articulo{
+ width:    250px ;
+ background: #fff;
+ margin-bottom: 30px;
+ border-radius: 10px;
+ padding: 45px 30px 60px 30px;
+}
+.articulo:hover{/*cuando el usuario se desplaza sobre un elemento con el cursor (puntero del mouse).*/
+box-shadow:  0 4px 10px rgba(17, 29, 48,.26);
+}
+.articulo i{
+    font-size: 30px;
+    color: #fff;
+    background: rgb(110, 225, 136);
+    display: block;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 50%;
+    box-shadow: 0 8px 32px rgba(31, 222,130, .46);
+    
+}
+.articulo h3{
+    font-size: 24px;
+    margin-top: 30px;
+     
+}
+.articulo p{
+    font-weight: 100;
+    color: #5D6678;
+    margin-top: 15PX;
+    padding-bottom: 20px;
+}
+.articulo a{
+    color: #5D6678;
+    font-weight: 400;
+    text-decoration: none;
+
+}
+
+.articulo a:hover{
+    color:#1FDE82;
+    transition: color 0.5;
+}
+
+/**preguntsa--sectionquestions---------------igualcontendio-header-*/
+.questions{
+    background: rgb(255, 255, 255);
+
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.questions img{
+    width: 60%;
+  /*  animation: ease-in animat 1s;*/
+}
+.textos-questions{
+
+    margin:0 0 0 30px;/*->*/
+
+}
+.textos-questions p{
+    font-weight: 100;
+    margin-top: 14px;
+    color: #5D6678;
+}
+.textos-questions a{/*boton verde*/
+    margin: 28px 0;
+    width: 130px;
+    display: block;
+    background: #288457;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-weight: 400;
+    text-transform: uppercase;/*mayusculas*/
+    font-size: 14px;
+    border-radius: 5px;
+    box-shadow: 0 8px 32px rgba(31, 222,130, .46);
+
+}
+/*----------------------------------*/
+.results{
+ 
+    padding-top: 30px;
+
+}
+.conten-results{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.numbers{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.numbers .number{
+    width: 45%;/*el 45 de 60*/
+    background: rgba(176, 31, 31, 0.2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 40px 35px;
+    margin-bottom: 20px;
+  
+}
+.numbers .number h4{
+    color:rgb(140, 115, 115);
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    
+}
+.numbers .number p{
+    color:#f2f5fc;
+    font-weight: 300;
+
+
+}
+.results-text{
+    width: 37%;/*3%para  un poco d espacio*/
+
+}
+.results-text h4{
+    color: #fff;
+    font-size: 40px;
+}
+
+
+.results-text p{
+    color: #fff;
+    font-weight: 300;
+    margin: 20px ;
+}
+.results-text a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    border:1px solid rgb(255, 255, 255) ;
+    padding: 10px;
+    width: 120px;
+    text-align: center;
+    border-radius: 5px;
+}
+/*---------services---------------------*/
+.services{
+    display: flex;
+    justify-content: space-between;/*no aparece la imagen q es un tamalo grnade*/
+
+}
+.services img{
+    width:55% ;/*solo para imgnes es bueno */
+   /* width: 500px;/*por eso le ajustamos el tamaño*/
+
+}
+.box-skills{
+   /* width:45% ;conviene no darle tamañ para el responsive */
+    margin: 40px 0 0 100px;
+}
+.box-skills h4{
+    font-size: 24px;
+    background: rgb(242, 239, 239);
+    width: 350px;
+    border-radius: 6px;
+    padding: 10px;
+    margin-bottom: 10px;
+    
+}
+.box-skills i{
+    color: #1fDE82;
+    font-size:  20PX;
+}
+/***************footer************************/
+footer{
+    background: rgb(202, 203, 201);
+    padding: 60px 0;
+    overflow: hidden;/*que no se desborde*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+
+}
+.partFooter{
+    width: 20%;
+    text-align: center;
+
+}
+.partFooter h4{
+    color: #1d1d1d;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.partooter img{
+    width: 70%;
+}
+.partFooter a{
+    display: block;
+    text-decoration: none;
+    color: cornflowerblue;
+    font-weight: 300;
+    transition: color .3s ease-in-out;/*relacion con el hover*/
+    margin-bottom: 10px;
+}
+.partFooter a:hover{
+    color:rgb(208, 0, 0)
+}
+.social-media i{
+    font-size: 20px;
+    display: inline-block;
+    color: #000000;
+    border:1px solid #343639;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-align: center;/*sguridad*/
+    transition: all ease-in-out 3.s;
+    margin-right: 5px;
+}
+.social-media i:hover{
+color: #fff;
+background: #1FDE82;
+border-color: #1FDE82;
+}
+
+@media screen and (max-width:800px){
+    .titulo{
+        font-size: 45px;
+/*------------header----------------*/
+    }
+    .enlaces-header{
+      /* display: none;*/
+      position: fixed;/*fuera de flex del padre*/
+      background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-evenly;
+      clip-path: ellipse(0% 0% at 100% 0);/*aplica atodo el contenedor*/
+
+    }
+    .nav .menudosF{
+        clip-path: ellipse(133.8% 133.8% at 100% 0);
+    }
+
+   .enlaces-header a{
+       color: white;
+   }
+    .hamburguer{
+        display: block;
+        z-index: 3;
+    }
+    .contenido-header{
+        flex-direction: column;
+        justify-content: space-evenly;/*para filas espacio*/
+        height: 720px;
+    }
+    .contenido-header img{
+        width: 400px;
+    }   
+/*-------------------------------*/
+    .textos-header{
+        margin: 0;
+    }
+/*---------about us------------*/
+.articulo{
+    width:    80% ;
+   }
+/*.articulo{
+  
+}*/
+    .questions{
+        height: 720px;
+        justify-content: space-evenly;/*para filas espacio*/
+        flex-direction: column;
+    }
+    .questions img{
+        width:400px ;
+    }
+/*results*/
+
+    .conten-results{
+        flex-direction: column-reverse;
+    }
+    .results-text a{
+        margin-bottom: 60px;
+    }
+    .numbers{
+        width: 100%;
+    }
+    .results-text{
+        width: 100%;
+    }
+
+/*services*/
+    .services{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .box-skills{
+        margin: 0 0 40px 0;
+   
+    }
+    .box-skills h4{
+        width:500;
+    }
+    .services img{
+        width:  400px;
+ 
+    }
+  /*footer*/
+    footer{
+        justify-content: space-evenly;
+
+    }
+    .partFooter{
+        width: 40%;
+        margin-bottom:40px ;
+    }
+
+
+}
+
+@media screen and (max-width:600px){
+    .titulo{
+        font-size: 35px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    .contenido-header{
+        height: 650px;
+    }
+    .nav{
+        padding: 0 10px;/*segun el yt no se rompe al ahcercarlos mis objetos xd*/
+    }
+    .contenido-header img{
+        width: 300px;
+    }
+
+
+   
+    .enlaces-header{
+        display: none;
+        position: fixed;/*fuera de flex del padre*/
+        background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        clip-path: ellipse(0% 0% at 100% 0);/*aplica atodo el contenedor*/
+  
+    }
+    .nav .menudosF{
+        clip-path: ellipse(133.8% 133.8% at 100% 0);
+    }
+    .hamburguer{
+        display: block;
+    }
+    /*about us*/
+    
+    /*articulois*/
+    .articulo{
+      
+        width: 100%;
+      
+        
+    }
+    .contenedor-articulo{
+        
+        padding: 0;
+        width: 100%;
+      
+        
+     
+   
+    }
+  
+    /*question*/
+    .questions img{
+        width: 300px;
+    }
+
+/*results*/
+    .numbers .number{
+        width: 100%;
+    }
+    .results-text h4{
+        font-size: 35px;
+    }
+
+/*services*/
+    .services img{
+        width: 300px;
+    }
+    .box-skills h4{
+        width: 100%;
+    }
+
+/*footer*/
+    .partFooter{
+        width: 95%;
+        margin-bottom: 40px;
+    }
+}
