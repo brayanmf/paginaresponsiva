@@ -1,17 +1,17 @@
-/*SCROLL ocultar nav por etiqueta */
-var a=window.pageYOffset//0
+
+var a=window.pageYOffset
 window.addEventListener ("scroll",function(){
   let b=window.pageYOffset
   if (a>=b){
-      document.getElementsByTagName("nav")[0].style.top = "0"/*seleccionar por etiquetas*/
+      document.getElementsByTagName("nav")[0].style.top = "0"
   }else{
 document.getElementsByTagName("nav")[0].style.top = "-100px"
   }
-a=b/*++*/
+a=b
 })
-/*menu nav */
-var enlacesheader = document.querySelectorAll(".enlaces-header")[0];/*seleccionar por class*/ 
+
+var enlacesheader = document.querySelectorAll(".enlaces-header")[0];
 var semaforo = true;
 document.querySelectorAll(".hamburguer")[0].addEventListener("click",function(){
-  enlacesheader.classList.toggle("menudosF")/*solo cambia stylo por click .togle regresa*/
+  enlacesheader.classList.toggle("menudosF")
 })
