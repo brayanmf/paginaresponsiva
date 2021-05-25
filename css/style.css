@@ -1,4 +1,4 @@
-/*font-family: 'Inconsolata', monospace;*/
+
 
 *{
     padding: 0;
@@ -14,12 +14,12 @@ h1,h4{
 } 
 .contenedor{
     width: 90%;
-    max-width: 1100px;/*que no rebaselos 1k px*/
+    max-width: 1100px;
     margin: auto;
-    overflow: hidden;/*corta si sobre pasa*/
+    overflow: hidden;
     
 }
-.contenedor1{/*tiene padding*/
+.contenedor1{
     width: 90%;
     max-width: 1000px;
     margin: auto;
@@ -30,8 +30,8 @@ h1,h4{
 h1{
     font-size: 50px
 }
-/***********HEADER***************************-----------------------------------------*/
-header::before{/*insertar antes del contenido, seudoelemento por por usar fixed*/
+
+header::before{
     content: "";
     display: block;
     height: 80px;
@@ -44,18 +44,18 @@ nav{
     border-bottom: 1px solid transparent;
     box-shadow: 1px 1px 10px 0 rgba(0,0,0, .2);
     position: fixed;
-    transition: ease-in-out 0.5s;/* retroceso para el ocultamiento Y ANIMACION CON  de jv*/
+    transition: ease-in-out 0.5s;
     top: 0;
- z-index: 3;/*al aplicrle animat por eso uso fixed*/
+ z-index: 3;
 }
 .nav{
-    display: flex;/*directamente--alinearlos en fila*/
-    justify-content: space-between;/*distribuyendoles por espacio*/
+    display: flex;
+    justify-content: space-between;
     height: 100px;
     width: 100%;
     align-items: center;
-    padding: 0 40px;/*800 muy apretado-con esto se ve bien*/
-    /*0 ariba0 abjo, costados 40px*/
+    padding: 0 40px;
+  
 }
 
 .nav .logo{
@@ -68,7 +68,7 @@ nav{
 }
 .enlaces-header{
     font-weight: 300;
-    transition: ease-in-out 0.5s;/*retroceso para el ocultamiento Y ANIMACION CON  de jv*/
+    transition: ease-in-out 0.5s;
 }
 .enlaces-header a{
     color: rgb(45, 69, 143);
@@ -83,40 +83,39 @@ nav{
 
     text-align: center;
     cursor: pointer;
-   /* z-index: 4;/*no es necesario ya que pertenece al img*/
-   /* transition:  color 0.5s ease-in;*/
+ 
 }
 .hamburguer i{
     font-size: 25px;
     line-height: 80px;
 }
-/*---------------------------------------------*/
+
 .contenido-header{
    /* width: 100%;*/
     height: 600px;
     display: flex;
-    justify-content: space-between;/*espacio entre 2*/
+    justify-content: space-between;
 
     align-items:center;
 }
 .contenido-header img{
     width: 60%;
-    /*width: 550px;*/
-    animation: ease-in animat 1s;/*el tieempo u retraso*/
+ 
+    animation: ease-in animat 1s;
 }
-@keyframes animat{/*animacion zoom*/
+@keyframes animat{
     0%{transform:scale(0);}
     100%{transform: scale(1);}
 }
 .textos-header{
-    margin:0 0 0 30px;/*ajustando el espacio*/
+    margin:0 0 0 30px;
 }
 .contenido-header p{
     font-weight: 300;
     margin-top: 14px;
     color: #7b0505;
 }
-.contenido-header a{/*boton verde*/
+.contenido-header a{
     margin: 28px 0;
     width: 130px;
     display: block;
@@ -125,7 +124,7 @@ nav{
     padding: 12px;
     text-decoration: none;
     font-weight: 400;
-    text-transform: uppercase;/*mayusculas*/
+    text-transform: uppercase;
     font-size: 14px;
     border-radius: 5px;
     box-shadow: 0 8px 32px rgba(31, 222,130, .46);
@@ -136,7 +135,7 @@ nav{
     font-size: 50px;
     
 }
-/*------sgtesection------about-us-----------------------------------*/
+
 .about-us{
     background: #f2f2f2;
 }
@@ -145,7 +144,7 @@ nav{
 display: flex;
 flex-wrap: wrap;
 margin-top: 60px ;
-justify-content: space-around;/*lo mismo evenly solo que mas espacio*/
+justify-content: space-around;
 }
 .articulo{
  width:    250px ;
@@ -154,7 +153,7 @@ justify-content: space-around;/*lo mismo evenly solo que mas espacio*/
  border-radius: 10px;
  padding: 45px 30px 60px 30px;
 }
-.articulo:hover{/*cuando el usuario se desplaza sobre un elemento con el cursor (puntero del mouse).*/
+.articulo:hover
 box-shadow:  0 4px 10px rgba(17, 29, 48,.26);
 }
 .articulo i{
@@ -193,7 +192,7 @@ box-shadow:  0 4px 10px rgba(17, 29, 48,.26);
     transition: color 0.5;
 }
 
-/**preguntsa--sectionquestions---------------igualcontendio-header-*/
+
 .questions{
     background: rgb(255, 255, 255);
 
@@ -204,11 +203,11 @@ box-shadow:  0 4px 10px rgba(17, 29, 48,.26);
 }
 .questions img{
     width: 60%;
-  /*  animation: ease-in animat 1s;*/
+
 }
 .textos-questions{
 
-    margin:0 0 0 30px;/*->*/
+    margin:0 0 0 30px;
 
 }
 .textos-questions p{
@@ -216,7 +215,7 @@ box-shadow:  0 4px 10px rgba(17, 29, 48,.26);
     margin-top: 14px;
     color: #5D6678;
 }
-.textos-questions a{/*boton verde*/
+.textos-questions a{
     margin: 28px 0;
     width: 130px;
     display: block;
@@ -225,13 +224,13 @@ box-shadow:  0 4px 10px rgba(17, 29, 48,.26);
     padding: 12px;
     text-decoration: none;
     font-weight: 400;
-    text-transform: uppercase;/*mayusculas*/
+    text-transform: uppercase;
     font-size: 14px;
     border-radius: 5px;
     box-shadow: 0 8px 32px rgba(31, 222,130, .46);
 
 }
-/*----------------------------------*/
+
 .results{
  
     padding-top: 30px;
@@ -272,7 +271,7 @@ box-shadow:  0 4px 10px rgba(17, 29, 48,.26);
 
 }
 .results-text{
-    width: 37%;/*3%para  un poco d espacio*/
+    width: 37%;
 
 }
 .results-text h4{
@@ -296,19 +295,19 @@ box-shadow:  0 4px 10px rgba(17, 29, 48,.26);
     text-align: center;
     border-radius: 5px;
 }
-/*---------services---------------------*/
+
 .services{
     display: flex;
-    justify-content: space-between;/*no aparece la imagen q es un tamalo grnade*/
+    justify-content: space-between;
 
 }
 .services img{
-    width:55% ;/*solo para imgnes es bueno */
-   /* width: 500px;/*por eso le ajustamos el tamaño*/
+    width:55% ;
+ 
 
 }
 .box-skills{
-   /* width:45% ;conviene no darle tamañ para el responsive */
+
     margin: 40px 0 0 100px;
 }
 .box-skills h4{
@@ -324,11 +323,11 @@ box-shadow:  0 4px 10px rgba(17, 29, 48,.26);
     color: #1fDE82;
     font-size:  20PX;
 }
-/***************footer************************/
+
 footer{
     background: rgb(202, 203, 201);
     padding: 60px 0;
-    overflow: hidden;/*que no se desborde*/
+    overflow: hidden;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -354,7 +353,7 @@ footer{
     text-decoration: none;
     color: cornflowerblue;
     font-weight: 300;
-    transition: color .3s ease-in-out;/*relacion con el hover*/
+    transition: color .3s ease-in-out;
     margin-bottom: 10px;
 }
 .partFooter a:hover{
@@ -371,7 +370,7 @@ footer{
     line-height: 38px;
     cursor: pointer;
     margin-top: 20px;
-    text-align: center;/*sguridad*/
+    text-align: center;
     transition: all ease-in-out 3.s;
     margin-right: 5px;
 }
@@ -384,11 +383,11 @@ border-color: #1FDE82;
 @media screen and (max-width:800px){
     .titulo{
         font-size: 45px;
-/*------------header----------------*/
+
     }
     .enlaces-header{
-      /* display: none;*/
-      position: fixed;/*fuera de flex del padre*/
+ 
+      position: fixed;
       background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);
       top: 0;
       right: 0;
@@ -398,7 +397,7 @@ border-color: #1FDE82;
       align-items: center;
       flex-direction: column;
       justify-content: space-evenly;
-      clip-path: ellipse(0% 0% at 100% 0);/*aplica atodo el contenedor*/
+      clip-path: ellipse(0% 0% at 100% 0);
 
     }
     .nav .menudosF{
@@ -414,23 +413,21 @@ border-color: #1FDE82;
     }
     .contenido-header{
         flex-direction: column;
-        justify-content: space-evenly;/*para filas espacio*/
+        justify-content: space-evenly;
         height: 720px;
     }
     .contenido-header img{
         width: 400px;
     }   
-/*-------------------------------*/
+
     .textos-header{
         margin: 0;
     }
-/*---------about us------------*/
+
 .articulo{
     width:    80% ;
    }
-/*.articulo{
-  
-}*/
+
     .questions{
         height: 720px;
         justify-content: space-evenly;/*para filas espacio*/
@@ -439,7 +436,7 @@ border-color: #1FDE82;
     .questions img{
         width:400px ;
     }
-/*results*/
+
 
     .conten-results{
         flex-direction: column-reverse;
@@ -454,7 +451,7 @@ border-color: #1FDE82;
         width: 100%;
     }
 
-/*services*/
+
     .services{
         flex-direction: column-reverse;
         align-items: center;
@@ -470,7 +467,7 @@ border-color: #1FDE82;
         width:  400px;
  
     }
-  /*footer*/
+
     footer{
         justify-content: space-evenly;
 
@@ -523,9 +520,7 @@ border-color: #1FDE82;
     .hamburguer{
         display: block;
     }
-    /*about us*/
-    
-    /*articulois*/
+  
     .articulo{
       
         width: 100%;
@@ -542,12 +537,12 @@ border-color: #1FDE82;
    
     }
   
-    /*question*/
+
     .questions img{
         width: 300px;
     }
 
-/*results*/
+
     .numbers .number{
         width: 100%;
     }
@@ -555,7 +550,7 @@ border-color: #1FDE82;
         font-size: 35px;
     }
 
-/*services*/
+
     .services img{
         width: 300px;
     }
@@ -563,7 +558,7 @@ border-color: #1FDE82;
         width: 100%;
     }
 
-/*footer*/
+
     .partFooter{
         width: 95%;
         margin-bottom: 40px;
