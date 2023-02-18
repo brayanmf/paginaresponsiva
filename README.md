@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://kit.fontawesome.com/8f1a392df7.js" crossorigin="anonymous"></script>
+<title>pagina web 1</title>
+</head>
+<body>
+   <header>
+       <nav>
+           <section class="contenedor nav">
+               <div class="logo">
+                   <img src="img/logo.png" alt="">
+               </div>
+               <div class="enlaces-header">
+                    <a href="#">Inicio</a>
+                    <a href="#">Nosotros</a>
+                    <a href="#">Portafolio</a>
+                    <a href="#">documentacion</a>
+                    <a href="#">Registrate</a>
+               </div>
+               <div class="hamburguer">
+                   <i class="fas fa-bars"></i>
+               </div>
+           </section>
+       </nav>
+       <div class="contenedor">
+        <section class="contenido-header"> 
+            <div class="textos-header">
+                <h1>Our creativity is your success</h1>
+                <p>Lorem ipsum donteuptas suscipit obcaecati quaerat porro, dolor, at ipsum.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <img src="img/harmony.svg" alt="">
+        </section>
+
+    </div>
+
+   </header>
+   <section class="about-us">
+       <div class="contenedor1">
+           <h2 class="titulo">We provide a wide range</h2>
+           <div class="contenedor-articulo">
+               <div class="articulo">
+                   <i class="fas fa-pen-fancy"></i>
+                   <h3>Design</h3>
+                   <p>Lorem ipse autem quaerat similique voluptatum nisiipse autem quaerat similique voluptatum nisi.</p>
+                    <a href="#">Read more --></a>
+               </div>
+               <div class="articulo">
+                <i class="fas fa-pen-fancy"></i>
+                <h3>Code</h3>
+                <p>Lorem ipse autem quaerat similique voluptatum nisiipse autem quaerat similique voluptatum nisi.</p>
+                 <a href="#">Read more --></a>
+            </div>
+            <div class="articulo">
+                <i class="fas fa-pen-fancy"></i>
+                <h3>Program</h3>
+                <p>Lorem ipse autem quaerat similique voluptatum nisiipse autem quaerat similique voluptatum nisi.</p>
+                 <a href="#">Read more --></a>
+            </div>
+            <div class="articulo">
+                <i class="fas fa-pen-fancy"></i>
+                <h3>Design</h3>
+                <p>Lorem ipse autem quaerat similique voluptatum nisiipse autem quaerat similique voluptatum nisi.</p>
+                 <a href="#">Read more --></a>
+            </div>
+            <div class="articulo">
+                <i class="fas fa-pen-fancy"></i>
+                <h3>Code</h3>
+                <p>Lorem ipse autem quaerat similique voluptatum nisiipse autem quaerat similique voluptatum nisi.</p>
+                 <a href="#">Read more --></a>
+            </div>
+            <div class="articulo">
+
+                <i class="fas fa-pen-fancy"></i>
+                <h3>Program</h3>
+                <p>Lorem ipse autem quaerat similique voluptatum nisiipse autem quaerat similique voluptatum nisi.</p>
+                 <a href="#">Read more --></a>
+            </div>
+           </div>
+       </div>
+   </section>
+   <section class="contenedor questions">
+    
+        <section class="textos-questions">
+            <h1>Our creativity is your success</h1>
+            <p>Lorem ipsum donteuptas suscipit obcaecati quaerat porro, dolor, at ipsum.</p>
+            <a href="#">Learn more</a>
+        </section>
+        <img src="img/harmony.svg" alt="">
+
+
+    </section>
+    <section class="results">
+        <div class="contenedor1 conten-results">
+            <section class="numbers">
+                 <div class="number">
+                     <h4>+554</h4>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, odio?</p>
+
+                 </div>
+                 <div class="number">
+                    <h4>+554</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, odio?</p>
+                    
+                </div>
+                <div class="number">
+                    <h4>+554</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, odio?</p>
+                    
+                </div>
+                <div class="number">
+                    <h4>+554</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, odio?</p>
+                    
+                </div>
+            
+            </section>
+            <section class="results-text">
+                <h4>Lorem ipsum dolor sit, a. Adipisci, earum!</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse deserunt fugiat blanditiis accusamus aliquam dolores?</p>
+                <a href="#">Ingrese aqui</a>
+            </section>
+        </div>
+    </section>
+
+
+    <section class="contenedor1 services">
+        <img src="img/harmony.svg" alt="">
+        <div class="box-skills">
+            <h4><i class="far fa-check-circle"></i>-Web design</h4>
+            <h4><i class="far fa-check-circle"></i>-Web development</h4>
+            <h4><i class="far fa-check-circle"></i> SEO</h4>
+            <h4><i class="far fa-check-circle"></i> Marketing</h4>
+            <h4><i class="far fa-check-circle"></i> Web Suport</h4>
+            
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="partFooter">
+            <img src="img/HARMONY.png" alt="">
+        </div>
+        <div class="partFooter">
+            <h4>Servicios</h4>
+            <a href="#">Services 1</a>
+            <a href="#">Services 2</a>
+            <a href="#">Services 3</a>
+            
+        </div>
+        <div class="partFooter">
+            <h4>Acerca de</h4>
+            <a href="#">Services 1</a>
+            <a href="#">Services 2</a>
+            <a href="#">Services 3</a>
+        </div>
+        <div class="partFooter">
+            <h4>Redes Sociales</h4>
+            <div class="social-media">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-youtube"></i>
+
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
